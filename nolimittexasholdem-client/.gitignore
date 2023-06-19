@@ -1,0 +1,13 @@
+# CMake
+cmake-build-debug/
+build/
+# JetBrains IDE
+.idea
+
+# Visual Studio
+out
+.vs/
+.vscode/
+
+.DS_Store
+
