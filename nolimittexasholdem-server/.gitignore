@@ -1,0 +1,16 @@
+# ====================================
+# nolimittexasholdem-server .gitignore
+# ====================================
+
+# Cargo
+Cargo.lock
+target
+
+# JetBrains IDE
+.idea
+
+# Visual Studio
+out
+.vs/
+
+.DS_Store
