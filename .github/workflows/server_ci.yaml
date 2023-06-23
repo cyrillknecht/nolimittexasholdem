@@ -1,0 +1,50 @@
+name: Rust Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Change to nolimittexasholdem-server directory
+        run: cd nolimittexasholdem-server
+
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Build and Test (stable)
+        run: |
+          cargo build --verbose
+          cargo test --verbose
+
+  nightly-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Change to nolimittexasholdem-server directory
+        run: cd nolimittexasholdem-server
+
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+
+      - name: Build and Test (nightly)
+        run: |
+          cargo build --verbose
+          cargo test --verbose
