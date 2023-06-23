@@ -5,13 +5,11 @@
 This is a simple C++ client implementation of the game "No Limit Texas Hold'Em Poker" developed by team Pokerers as a course project for the Software Engineering Course at ETH Zurich. You can read the game's rules [here](https://upswingpoker.com/poker-rules/). The rules of of our game are slightly altered, as to facilitate the game's implementation. Following things were altered:
 - If there are multiple winners, everyone gets their money reimbursed
 - There are eight rounds in total, four to adjust the bets, and four to decide whether one wants to call or fold. In the latter four, players who do not need to call are automatically skipped.
-- The raise button sets the TOTAL amount of coins betted. So if you are already betting 150 coins, and want to bet 50, you have to enter 200, not 50.
+- The raise button sets the TOTAL amount of coins bet. So if you are already betting 150 coins, and want to bet 50, you have to enter 200, not 50.
 - The bet should be a multiple of the small blind (which doubles everytime the dealer passes position 0), unless it's an all-in
 - An invalid input might be corrected automatically by the server to a valid amount
 - Other slight edits were made
 
-This repository only contains the code for the client part of the game.
-The server code can be found in this[repository](https://gitlab.ethz.ch/thherzog/nolimittexasholdem-server)
 
 To run the game after following the installation instructions for building the server and client, you need to do the following:
 
@@ -43,15 +41,11 @@ bash run_game.sh 1 host
 
 
 
-For the run_game script to work, the `nolimittexasholdem-client` directory must be in the same directory as the `nolimittexasholdem-server` directory.
 The run_game script was only tested on macOS. It might not work on other systems. In this case please follow the manual instructions below to run the game.
 
 
 # Client Installation Instructions
 *The instructions for setting up the client are the same as for the original Lama Project provided by the course.*
-for installation instructions for the server,
-please refer to the server's [README](https://gitlab.ethz.ch/thherzog/nolimittexasholdem-server/-/blob/master/README.md).
-
 
 ## 1. Compile instructions
 This project only works on UNIX systems (Linux / MacOS). We recommend using [Ubuntu](https://ubuntu.com/#download), as it offers the easiest way to set up wxWidgets. Therefore, we explain installation only for Ubuntu systems. The following was tested on an Ubuntu 20.4 system, but should also work for earlier versions of Ubuntu.

@@ -3,6 +3,13 @@
 ![Poker-logo](./assets/poker_logo.png?raw=true)
 
 This is an implementation of the game "No Limit Texas Hold'Em Poker" developed by team Pokerers as a course project for the Software Engineering Course at ETH Zurich. You can read the game's rules [here](https://upswingpoker.com/poker-rules/).
+The game is implemented as a client-server application. The server is implemented in Rust and the client is implemented in C++ using the wxWidgets library.
+The client implementation is based on an example project provided by the course. For more information about the project, please refer to the
+[presentation slides](./assets/presentation/final_presentation.pdf) of the final presentation.
+
+**My contribution to the project was the implementation of the server, specifically the UI, and the definition of the Software Requirements Specification(SRS).
+While achieving good grades for our implementation (5.75/6.0), we are aware that the code could still benefit of a major refactor implementing best practices
+and improving readability.**
 
 ## Installation
 ### Prerequisites
@@ -11,10 +18,10 @@ This is an implementation of the game "No Limit Texas Hold'Em Poker" developed b
 - Git must be installed on your system. If it is not installed, you can download and install it from
   the [official Git website](https://git-scm.com/downloads)
 
-First of all, clone all submodules of this repository.
+First of all, clone this repository.
 
 ````
-git clone --recurse-submodules https://gitlab.ethz.ch/thherzog/nolimittexasholdem.git 
+git clone https://github.com/cyrillknecht/nolimittexasholdem.git 
 ````
 
 ### Server Installation Instructions

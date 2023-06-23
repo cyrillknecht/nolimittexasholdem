@@ -1,6 +1,6 @@
 # No Limit Texas Hold'Em Poker Server by Pokerers
 
-![Poker-logo](https://gitlab.ethz.ch/thherzog/nolimittexasholdem-client/-/raw/master/assets/poker_logo.png?raw=true)
+![Poker-logo](./assets/poker_logo.png?raw=true)
 
 ## Instructions
 
