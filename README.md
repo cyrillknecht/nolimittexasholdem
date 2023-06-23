@@ -7,8 +7,8 @@ The game is implemented as a client-server application. The server is implemente
 The client implementation is based on an example project provided by the course. For more information about the project, please refer to the
 [presentation slides](./assets/presentation/final_presentation.pdf) of the final presentation.
 
-**My contribution to the project was the implementation of the server, specifically the UI, and the definition of the Software Requirements Specification(SRS).
-While achieving good grades for our implementation (5.75/6.0), we are aware that the code could still benefit of a major refactor implementing best practices
+**My contribution to the project was mainly to the implementation of the server, specifically the UI, and the definition of the Software Requirements Specification(SRS).
+Whilst achieving good grades for our implementation (5.75/6.0), we are aware that the code could still benefit from a major refactor implementing best practices
 and improving readability.**
 
 ## Installation
